@@ -26,6 +26,8 @@
 #include "heltec.h"
 #include "WiFi.h"
 #include "images.h"
+#include "LoRa.h"
+
 
 #define BAND    868E6  //you can set band here directly,e.g. 868E6,915E6
 
