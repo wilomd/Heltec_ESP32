@@ -225,11 +225,12 @@ void send()
 }
 void displaySendReceive()
 {
-    Heltec.display -> drawString(0, 50, "Packet " + (String)(counter-1) + " sent done");
+    Heltec.display -> drawString(0, 50, "Packet " + (String)(counter-1) + " sent done"); 
     Heltec.display -> drawString(0, 0, "Received Size" + packSize + " packages:");
     Heltec.display -> drawString(0, 10, packet);
     Heltec.display -> drawString(0, 20, "With " + rssi);
     Heltec.display -> display();
+    digitalWrite(25,LOW);	// off led
     delay(100);
     Heltec.display -> clear();
 }
